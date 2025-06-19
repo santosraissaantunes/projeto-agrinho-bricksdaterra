@@ -1,0 +1,101 @@
+body {
+  background: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-content {
+  margin-left: 220px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #198754;
+  height: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ffca2c;
+}
+
+footer {
+  background-color: #198754;
+}
+
+.modal-header.bg-success,
+footer {
+  background: #198754 !important;
+}
+
+.nav-link:hover {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+#briksList .card {
+  background: #fff;
+  border-radius: 10px;
+}
+
+#briksList .card-title {
+  color: #198754;
+}
+
+#briksList .card-text {
+  color: #333;
+}
+/* Logo responsiva */
+.logo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* Estilos para agrupamento por categoria */
+.category-section {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #198754;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #ffc107;
+}
+
